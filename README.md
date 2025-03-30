@@ -1,88 +1,86 @@
 # Lung Cancer Survival Prediction #
 
-# Overview
-This project predicts the survival chances of lung cancer patients based on their medical history and lifestyle factors. It implements **Machine Learning (XGBoost)** and **Deep Learning (Neural Networks)** to compare model performance and identify key predictors.
+# Project Overview
+This project aims to predict the survival of lung cancer patients based on medical and demographic data. It utilizes both **Machine Learning (XGBoost)** and **Deep Learning (Neural Networks)** to analyze and compare model performance. The dataset consists of patient records, including attributes such as age, cancer stage, smoking status, BMI, and treatment type.
 
-This project was completed as part of my **internship**, where I focused on data preprocessing, feature engineering, model development, and evaluation to derive meaningful insights.
-
-# Dataset
-The dataset contains patient records, including medical conditions, demographics, and lifestyle factors. Key features include:
-- **Age, Gender, Country**
-- **Cancer Stage, Family History**
-- **Smoking Status, BMI, Hypertension, Asthma**
-- **Treatment Type, Cholesterol Level**
-- **Survival Status (Target Variable)**
+# Dataset Information
+The dataset includes **890,000 patient records** with the following key features:
+- `id`: Unique patient identifier
+- `age`: Age at diagnosis
+- `gender`: Male/Female
+- `cancer_stage`: Stage I-IV
+- `smoking_status`: Current smoker, former smoker, never smoked, passive smoker
+- `bmi`: Body Mass Index
+- `hypertension`, `asthma`, `cirrhosis`, `other_cancer`: Comorbidities
+- `treatment_type`: Surgery, chemotherapy, radiation, combined
+- `survived`: Target variable (Yes/No)
 
 📂 Dataset Access
-- Due to GitHub's file size limitations, the dataset is hosted externally. You can download it from:
-  📌 Google Drive Link - https://drive.google.com/file/d/1beHH6goLrHpMk5z1hp8Ar5UFtJ6Lv8Fz/view?usp=drive_link
+-  Due to GitHub's file size limitations, the dataset is hosted externally. You can download it from:
+   Google Drive Link - https://drive.google.com/file/d/1beHH6goLrHpMk5z1hp8Ar5UFtJ6Lv8Fz/view?usp=drive_link
 
-# My Role & Contributions
-- **Data Preprocessing**: Cleaning, handling missing values, encoding categorical features, and balancing the dataset using SMOTE.
-- **Exploratory Data Analysis (EDA)**: Identified key predictors using statistical visualizations.
-- **Model Development**: Built and optimized XGBoost and Neural Networks for prediction.
-- **Feature Importance Analysis**: Used SHAP to interpret the model’s decisions.
-- **Deployment**: Developed a Flask API for real-time predictions (optional for deployment).
 
 # Project Workflow
-1. **Data Preprocessing**  
-   - Handle missing values
-   - Encode categorical features
-   - Scale numerical features
-   - Balance dataset using SMOTE
+1. **Data Preprocessing**
+   - Handling missing values
+   - Encoding categorical variables
+   - Feature scaling (Standardization)
+   - Balancing classes using **SMOTE**
 
-2. **Exploratory Data Analysis (EDA)**  
-   - Visualize feature distributions
-   - Check correlations
-   - Identify key predictors
+2. **Model Training**
+   - **XGBoost (Machine Learning)**: Feature importance analysis with SHAP
+   - **Deep Learning (Neural Network)**: Multi-layer perceptron (MLP) architecture
 
-3. **Model Training & Evaluation**  
-   - Train **XGBoost (Machine Learning)**
-   - Train **Deep Neural Network (Deep Learning)**
-   - Compare models based on Accuracy, Precision, Recall, F1-score
+3. **Model Evaluation**
+   - Accuracy, Precision, Recall, F1-score
+   - Confusion Matrix & ROC Curve
+   - Comparison of ML vs. Deep Learning
 
-4. **Feature Importance Analysis**  
-   - Use SHAP to explain predictions
-   - Identify most influential features
+4. **Deployment (Optional)**
+   - Flask API for real-time predictions
+   - Deployment on **AWS/Heroku**
 
-5. **Deployment**  
-   - Build **Flask API** for real-time predictions
-   - Host on cloud platform (optional)
-
-# Technologies Used
-- **Python (Pandas, NumPy, Scikit-Learn, TensorFlow, XGBoost, SHAP)**
-- **Jupyter Notebook for development**
-- **Flask for deployment**
-
-# Results & Insights
-- **XGBoost performed well** with good explainability.
-- **Neural Networks showed improved accuracy** but required more training data.
-- **Smoking Status, Cancer Stage, and BMI were key predictors.**
+# Results & Findings
+- **XGBoost achieved ~88% accuracy**, providing interpretable predictions via SHAP.
+- **Neural Networks reached ~91% accuracy**, showing better performance but requiring more computation.
+- **Feature importance**: Cancer stage, smoking status, and BMI were the top predictors.
+- **Survival rate trends**: Patients diagnosed at an early stage had significantly higher survival chances.
 
 # How to Run the Project
-1. **Clone the repository**
-   ```sh
-   git clone https://github.com/yourusername/lung-cancer-prediction.git
-   cd lung-cancer-prediction
-   ```
-2. **Install dependencies**
-   ```sh
-   pip install -r requirements.txt
-   ```
-3. **Run Jupyter Notebook for model training**
-4. **Start Flask API for predictions**
-   ```sh
-   python app.py
-   ```
+### 1️⃣ Install Dependencies
+```bash
+pip install pandas numpy scikit-learn xgboost tensorflow flask
+```
 
-# Future Improvements
-- Optimize hyperparameters for better performance
-- Deploy on cloud (AWS, GCP, or Heroku)
-- Use larger and more diverse datasets
+### 2️⃣ Run Jupyter Notebook
+```bash
+jupyter notebook
+```
+Open and execute `Lung_Cancer_Prediction.ipynb`
 
-# Contributors
-- **Revati Mahajan** - Data Science & Machine Learning Engineer (Intern)
+### 3️⃣ Deploy Flask API (Optional)
+```bash
+python app.py
+```
 
-# License
-This project is licensed under the MIT License.
+# Future Scope
+- **Improve Deep Learning architecture** using CNN/LSTM for better feature extraction.
+- **Deploy as a web app** with real-time data entry and prediction.
+- **Integrate Explainable AI (XAI)** for model transparency.
+
+# Key Skills Gained
+✅ **Machine Learning & Deep Learning**
+✅ **Feature Engineering & Data Preprocessing**
+✅ **Model Comparison & Evaluation**
+✅ **Flask API for Deployment**
+
+---
+
+# Connect with Me
+**GitHub**: [github.com/Revati07](https://github.com/Revati07)  
+**LinkedIn**: [linkedin.com/in/revatimahajan](https://linkedin.com/in/revatimahajan)
+
+
+
+
 
