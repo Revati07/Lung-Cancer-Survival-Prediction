@@ -13,6 +13,10 @@ The dataset contains patient records, including medical conditions, demographics
 - **Treatment Type, Cholesterol Level**
 - **Survival Status (Target Variable)**
 
+📂 Dataset Access
+- Due to GitHub's file size limitations, the dataset is hosted externally. You can download it from:
+  📌 Google Drive Link - https://drive.google.com/file/d/1beHH6goLrHpMk5z1hp8Ar5UFtJ6Lv8Fz/view?usp=drive_link
+
 # My Role & Contributions
 - **Data Preprocessing**: Cleaning, handling missing values, encoding categorical features, and balancing the dataset using SMOTE.
 - **Exploratory Data Analysis (EDA)**: Identified key predictors using statistical visualizations.
