@@ -41,8 +41,8 @@ The dataset includes **890,000 patient records** with the following key features
    - Deployment on **AWS/Heroku**
 
 # Results & Findings
-- **XGBoost achieved ~88% accuracy**, providing interpretable predictions via SHAP.
-- **Neural Networks reached ~91% accuracy**, showing better performance but requiring more computation.
+- **XGBoost achieved 78% accuracy**, providing interpretable predictions via SHAP.
+- **Neural Networks reached 50% accuracy**, not showing better performance but requiring more computation.
 - **Feature importance**: Cancer stage, smoking status, and BMI were the top predictors.
 - **Survival rate trends**: Patients diagnosed at an early stage had significantly higher survival chances.
 
